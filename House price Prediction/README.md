@@ -1,9 +1,9 @@
-<!-- House Price Prediction -->
-<!-- Project Overview -->
+🏠 House Price Prediction
+Project Overview
 
 This project predicts house prices based on features like square footage, number of bedrooms and bathrooms, year built, and location. The goal is to provide data-driven price predictions for buyers, sellers, and real estate platforms.
 
- <!-- Dataset -->
+📊 Dataset
 
 The dataset house_data_large.csv contains historical house data.
 
@@ -16,14 +16,13 @@ Bathrooms	Number of bathrooms
 YearBuilt	Year the house was built
 LocationCode	Encoded location/category of the house
 Price	Target variable - house price
-
- <!-- Exploratory Data Analysis (EDA) -->
+🔍 Exploratory Data Analysis (EDA)
 
 Checked data shape, types, missing values, and statistics
 
 Visualized distribution of house prices
 
-<!-- Explored relationships: -->
+Explored relationships:
 
 Price vs Square Footage (scatter plot)
 
@@ -35,24 +34,25 @@ Checked for outliers using box plots
 
 Checked correlation between features and target
 
-<!-- Models Used -->
+🛠 Models Used
 
 Five regression models were trained and evaluated:
 
-Model	              Notes
+Model	Notes
 Linear Regression	Coefficient-based, scaled features used
-Decision Tree	    Handles non-linear patterns
-Random Forest	    Ensemble of trees, captures complex patterns
+Decision Tree	Handles non-linear patterns
+Random Forest	Ensemble of trees, captures complex patterns
 Gradient Boosting	Boosting ensemble for better accuracy
 K-Nearest Neighbors	Distance-based, scaled features used
-
- <!-- Data Preprocessing -->
+⚙️ Data Preprocessing
 
 Split dataset into train (80%) and test (20%)
 
 Standard Scaling applied to features for Linear Regression and KNN
 
- <!-- Model Evaluation Metrics -->
+Outliers were visually inspected but not removed for simplicity
+
+📈 Model Evaluation Metrics
 
 R² Score: Measures how well the model predicts variance in house prices
 
@@ -60,28 +60,28 @@ RMSE (Root Mean Squared Error): Measures prediction error magnitude
 
 MAE (Mean Absolute Error): Average absolute error of predictions
 
- <!-- Feature Importance -->
+🌟 Feature Importance
 
 Feature importance calculated using Random Forest
 
 Highlights which features contribute most to predicting house prices
 
-<!-- Example insights: -->
+Example insights:
 
 Square Footage (Sqft) is the most important predictor
 
 Location also significantly affects price
 
- <!-- Prediction -->
+🏠 Prediction
 
 Users can input a house’s features to get a predicted price
 
-<!-- Example: -->
+Example:
 
 user_input = np.array([[2774, 4, 1, 2005, 3]])
 predicted_price = model.predict(user_input)
 
- <!-- Key Learnings -->
+📌 Key Learnings
 
 Explored EDA and visualizations to understand data
 
@@ -93,7 +93,7 @@ Understood feature importance and how features influence house price
 
 Practiced model evaluation and prediction on real-world data
 
- <!-- Tools & Libraries -->
+🔧 Tools & Libraries
 
 Python
 
@@ -103,12 +103,14 @@ Matplotlib, Seaborn
 
 Scikit-learn
 
- <!-- Use Cases -->
+💡 Use Cases
 
 Home Buyers: Estimate fair house price
 
 Real Estate Websites: Suggest prices for listings
 
 Sellers: Set competitive prices
+
+Banks: Evaluate property value for loans
 
 Investors: Identify undervalued properties
